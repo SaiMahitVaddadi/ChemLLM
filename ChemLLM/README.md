@@ -1,0 +1,44 @@
+# ChemLLM: Chemistry-Focused Language Model Toolkit
+
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A specialized toolkit for training and fine-tuning language models on chemical data, featuring domain-specific architectures and utilities.
+
+## Features
+
+- Customizable model architectures for chemical language modeling
+- Fine-tuning utilities for molecular property prediction
+- Chemistry-aware tokenization and preprocessing
+- Distributed training support
+- Integration with popular cheminformatics libraries
+
+## Installation
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/ChemLLM.git
+cd ChemLLM
+
+# Install with pip (editable mode)
+pip install -e .
+
+
+ChemLLM/
+├── src/
+│   └── ChemLLM/
+│       ├── __init__.py
+│       ├── trainer.py          # Main training logic
+│       ├── predictor/          # Fine-tuning components
+│       │   ├── tuning.py
+│       │   └── __init__.py
+│       └── utils/              # Utility functions
+│           ├── initalizer.py   # Configuration management
+│           └── __init__.py
+├── examples/                   # Example notebooks
+├── data/                       # Sample datasets
+├── tests/                      # Unit tests
+├── setup.py
+├── pyproject.toml
+└── README.md
